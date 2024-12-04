@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+    body {
+      font-family: sans-serif;
+      
+    }
+    .main{
+        padding: 120px;
+        padding-top: 110px;
+        padding-left: 140px;
+    }
+    .all-info{
+        width: 1100px;
+        background-color: bisque;
+        min-height: 700px;
+        height: auto;
+    }
+    
+    .account{
+        font-size: 24px;
+        text-decoration: underline solid rgb(68, 68, 226);
+        color: rgb(61, 61, 243);    
+    }
+    .info-list{
+        width: 100%;
+        min-height: 600px;
+        height: auto;
+        background-color: khaki;
+        margin-top: 10px;
+        margin-left:30px ;
+
+    }
+    .company-div{
+        display: flex;
+        width: 1000px;
+        background-color: brown; 
+        justify-content: space-between;
+    
+        height: 80px;
+        padding-top: 10px;
+
+    }
+    .company-input{
+        width: 600px;
+        height: 40px;
+        border-radius: 10px;
+        border: 0.5px solid #141B5F;
+        
+        padding-left: 10px;
+    }
+    .company-div p{
+        font-size: 20px;
+    }
+    .address-div{
+        display: flex;
+        width: 1000px;
+        background-color: rgb(58, 97, 134); 
+        justify-content: space-between;
+    
+        height: 80px;
+        padding-top: 10px;
+    }
+    .address-div p{
+        font-size: 20px;
+    }
+    .admin-div{
+        display: flex;
+        background-color: darksalmon;
+        width: 1000px;
+        height: 100px;
+    }
+    .admin-name{
+        display: flex;
+        width: 50%;
+        background-color: brown;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .admin-name p{
+        font-size: 20px;
+    }
+    .admin-input{
+        width: 300px;
+        height: 40px;
+        border-radius: 10px;
+        border: 0.5px solid #141B5F;
+        padding-left: 10px;
+    }
+    .admin-role{
+        display: flex;
+        width: 50%;
+        background-color: cornflowerblue;
+        justify-content: space-between;
+        padding-left: 20px;
+        align-items: center;
+    }
+    .admin-role p{
+        font-size: 20px;
+    }
+    .email-div{
+        display: flex;
+        background-color: darksalmon;
+        width: 1000px;
+        height: 80px;
+    }
+    .email-name{
+        display: flex;
+        width: 50%;
+        background-color: rgb(34, 110, 38);
+        justify-content: space-between;
+        align-items: center;
+    }
+    .email-name p{
+        font-size: 20px;
+    }
+    .website{
+        display: flex;
+        width: 50%;
+        background-color: rgb(221, 100, 237);
+        justify-content: space-between;
+        padding-left: 20px;
+        align-items: center; 
+    }
+    .website p{
+        font-size: 20px;
+    }
+
+    .based-div {
+        display: flex;
+        background-color: darksalmon;
+        width: 1000px;
+        height: 80px;
+    }
+    
+    .manufactoring{
+        display: flex;
+        width: 50%;
+        background-color: rgb(47, 122, 141);
+        
+        align-items: center;
+    }
+    .man-div{
+        margin-left: 20px;
+    }
+    
+
+    /* Hide the default radio button appearance */
+.check {
+    -webkit-appearance: none;  /* Remove default radio button in Webkit browsers */
+    -moz-appearance: none;     /* Remove default radio button in Firefox */
+    appearance: none;          /* Remove default appearance */
+    width: 20px;               /* Set a larger width for the box */
+    height: 20px;              /* Set a larger height for the box */
+    background-color: gray;
+    border-radius: 0;          /* Keep the box square (no rounding) */
+    display: inline-block;     /* Ensure it stays inline with text */
+    position: relative;
+    cursor: pointer;          /* Pointer cursor for better user experience */
+    transition: background-color 0.3s ease; /* Smooth transition on color change */
+    margin-top: 5px;
+}
+
+/* When the radio button is checked, change the background to green */
+.check:checked {
+    background-color: green;   /* Green color when checked */
+    border-color: green;       /* Green border when checked */
+}
+
+/* Optional: Styling for hover effect */
+.check:hover {
+    border-color: #007BFF; /* Change border color on hover */
+}
+
+/* Optional: Style when radio button is focused */
+.check:focus {
+    outline: none; /* Remove outline when focused */
+    border-color: #006400; /* Dark green border on focus */
+}
+
+
+.service{
+    display: flex;
+    width: 50%;
+    background-color: rgb(98, 86, 165);
+        
+    align-items: center;
+}
+.ser-div{
+    margin-left: 20px;
+}
+
+.about{
+    display: flex;
+    background-color: rgb(100, 154, 199);
+    width: 1000px;
+    min-height: 80px;
+    height: auto;
+    justify-content: space-between;
+}
+.about-p-div{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.about-p-div p{
+    font-size: 20px;
+}
+.textarea-div textarea{
+    background: transparent;
+    width: 99%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border: solid #141B5F 0.5px;
+    border-radius: 10px;
+    height: 300px;
+    margin-top: 50px;
+    
+}
+.textarea-div{
+ width: 80%;
+ background-color: bisque;
+ display: flex;
+ flex-direction: column;
+ align-items: end;
+
+}
+.textarea-div p{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+
+.btn-div{
+    display: flex;
+    background-color: darksalmon;
+    width: 1000px;
+    height: 80px;
+    justify-content: end;
+    align-items: center;
+}
+
+.btn{
+    background-color: #141B5F;
+    border: none;
+    font-size: 14px;
+    color: aliceblue;
+    padding: 6px 12px;
+    border-radius: 5px;
+
+}
+
+    
+

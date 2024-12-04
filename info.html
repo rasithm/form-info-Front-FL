@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="info.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <ul class="menu">
+                    <li class="logo">
+                        <!-- change the name of logo according to your name of image (mani/vengu) -->
+                        <a href="#"><img src="p2.png" alt="Placeme Logo" style="height: 30px;"></a>
+                    </li>
+                    <div class="item">
+                        
+                    
+                        <li ><a href="{% url 'job_seeker:home' %}"><i class="fa-solid fa-house"></i>Home</a></li>
+                    </div>
+                    <div class="item">
+                        
+                    
+                        <li><a href="{% url 'job_seeker:job' %}"><i class="fa-solid fa-briefcase"></i>Jobs</a></li>
+                    </div>
+                    <div class="item">
+                        <li><a href="{% url 'job_seeker:profile' %}"><i class="fa-solid fa-bell"></i>Notifications</a></li>
+                    </div>
+                    
+                    <li class="item button"><a href="{% url 'job_seeker:profile' %}"><i class="fa-solid fa-user"></i> 
+                      Profile</a></li>
+                    <li class="toggle" id="menu-toggle"><span class="bars"></span></li>
+                    <li class="item button"><a href="{% url 'auth:login' %}">Log In</a></li>
+                    <li class="item">
+                        <select name="Usertypes" onchange="location = this.value;">
+                            <option value="{% url 'job_seeker:home' %}">Job Seeker</option>
+                            <option value="{% url 'recruiters:home' %}">Recruiter</option>
+                            <option value="{% url 'administrator:dashboard' %}">Administrator</option>
+                            <option value="{% url 'refer_and_earn:home' %}">Refer and earn</option>
+                        </select> 
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="all-info">
+            <div class="account-div">
+                <p class="account">Create an employer account</p>
+            </div>
+            <div class="info-list">
+                <div class="company-div">
+                    <p >Company name</p>
+                    <input class="company-input" placeholder="Enter Company name" required/>
+                </div>
+                <div class="address-div">
+                    <p >Address</p>
+                    <input class="company-input" placeholder="Enter Address" required/>
+                </div>
+
+
+                <div class="admin-div">
+                    <div class="admin-name">
+                        <p >Admin Name</p>
+                        <input class="admin-input" placeholder="Enter Admin name" required/> 
+                    </div>
+                    <div class="admin-role">
+                        <p>Admin Role</p>
+                        <input class="admin-input" placeholder="Enter Admin role" required/>
+                    </div>
+
+                </div>
+
+                <div class="email-div">
+                    <div class="email-name">
+                        <p >Official e-mail</p>
+                        <input class="admin-input" placeholder="Rasith134@gmail.com" required/> 
+                    </div>
+                    <div class="website">
+                        <p>Website</p>
+                        <input class="admin-input"  required/>
+                    </div>
+                </div>
+
+
+                <div class="email-div">
+                    <div class="email-name">
+                        <p >No.of.employees</p>
+                        <input class="admin-input" placeholder="12" type="number" required/> 
+                    </div>
+                </div>
+
+
+                <div class="based-div">
+                    <div class="manufactoring">
+                        <div>
+                            <input type="radio" class="check" name="check"/>
+                        </div>
+                        <div class="man-div">
+                            <p>Is service based</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div>
+                            <input type="radio" class="check" name="check"/>
+                        </div>
+                        <div class="ser-div">
+                            <p>Is service based</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="email-div">
+                    <div class="email-name">
+                        <p >Industry type</p>
+                        <select class="admin-input">
+							<option>Full Stack Development</option>
+							<option>Java Programming</option>
+							<option>Python</option>
+							<option>Data Analyst</option>
+						</select> 
+                    </div>
+                    <div class="website">
+                        <p>Website</p>
+                        <select class="admin-input">
+							<option>Full Stack Development</option>
+							<option>Java Programming</option>
+							<option>Python</option>
+							<option>Data Analyst</option>
+						</select>
+                    </div>
+
+
+                </div>
+                <div class="about">
+                    <div class="about-p-div">
+                        <p>About Company</p>
+                    </div>
+                    <div class="textarea-div">
+                        <textarea placeholder="short Description" id="book-description-input"></textarea>
+                        <p>1/50 chart</p>
+                    </div>
+                        
+                    
+                </div>
+                <div class="btn-div">
+                    <button class="btn">Create account</button>
+                </div>
+
+
+                
+
+
+
+            </div>
+
+        </div>
+        
+    </main>
+</body>
+</html>
