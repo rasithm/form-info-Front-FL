@@ -223,7 +223,7 @@
 /* Optional: Style when radio button is focused */
 .check:focus {
     outline: none; /* Remove outline when focused */
-    border-color: #006400; /* Dark green border on focus */
+    border-color: #47B749; /* Dark green border on focus */
 }
 
 
