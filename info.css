@@ -10,27 +10,28 @@
       
     }
     .main{
-        padding: 120px;
-        padding-top: 110px;
-        padding-left: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
     }
     .all-info{
         width: 1100px;
-        background-color: bisque;
+        /* background-color: bisque; */
         min-height: 700px;
         height: auto;
     }
     
     .account{
         font-size: 24px;
-        text-decoration: underline solid rgb(68, 68, 226);
-        color: rgb(61, 61, 243);    
+        text-decoration: underline solid #141B5F;
+        color: #141B5F;    
     }
     .info-list{
         width: 100%;
         min-height: 600px;
         height: auto;
-        background-color: khaki;
+        /* background-color: khaki; */
         margin-top: 10px;
         margin-left:30px ;
 
@@ -38,28 +39,68 @@
     .company-div{
         display: flex;
         width: 1000px;
-        background-color: brown; 
+        /* background-color: brown;  */
         justify-content: space-between;
     
         height: 80px;
         padding-top: 10px;
 
     }
-    .company-input{
+    span{
+        color: red;
+    }
+
+    .company-input {
         width: 600px;
         height: 40px;
         border-radius: 10px;
-        border: 0.5px solid #141B5F;
-        
+        border: 1px solid #141B5F;
         padding-left: 10px;
+        font-size: 16px;
+        color: #333;
+        background-color: #f0f4f8;  /* Light background color */
+        transition: all 0.3s ease;   /* Smooth transition for effects */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
     }
+    
+
+    /* Focused input style (when user clicks/selects the input field) */
+    .company-input:focus ,.admin-input:focus ,.textarea-div textarea:focus {
+        border: 1px solid #0066cc;  /* Blue border on focus */
+        background-color: #fff;     /* White background when focused */
+        box-shadow: 0 4px 8px rgba(0, 102, 204, 0.3); /* Subtle blue shadow */
+        outline: none;  /* Remove default outline */
+    }
+    
+    /* Hover effect (when the user hovers over the input) */
+    .company-input:hover ,.admin-input:hover,.textarea-div textarea:hover {
+        border: 1px solid #0066cc;  /* Change border color on hover */
+        background-color: #e8f0fe;   /* Slightly darker background */
+        box-shadow: 0 2px 8px rgba(0, 102, 204, 0.15); /* Light shadow on hover */
+    }
+    
+    /* Active state style when typing (focused and typed into) */
+    .company-input:active ,.admin-input:active ,.textarea-div textarea:active {
+        border: 1px solid #005bb5;  /* Darker blue border when typing */
+        box-shadow: 0 2px 8px rgba(0, 91, 181, 0.3); /* Darker shadow when typing */
+    }
+    
+    /* Placeholder text customization */
+    .company-input::placeholder ,.admin-input::placeholder{
+        color: #999;  /* Light grey placeholder */
+        font-style: italic;
+        opacity: 0.7;  /* Slightly transparent */
+    }
+    
+
+
     .company-div p{
         font-size: 20px;
     }
     .address-div{
         display: flex;
         width: 1000px;
-        background-color: rgb(58, 97, 134); 
+        /* background-color: rgb(58, 97, 134);  */
         justify-content: space-between;
     
         height: 80px;
@@ -70,14 +111,14 @@
     }
     .admin-div{
         display: flex;
-        background-color: darksalmon;
+        /* background-color: darksalmon; */
         width: 1000px;
         height: 100px;
     }
     .admin-name{
         display: flex;
         width: 50%;
-        background-color: brown;
+        /* background-color: brown; */
         justify-content: space-between;
         align-items: center;
     }
@@ -90,11 +131,14 @@
         border-radius: 10px;
         border: 0.5px solid #141B5F;
         padding-left: 10px;
+        background-color: #f0f4f8;  /* Light background color */
+        transition: all 0.3s ease;   /* Smooth transition for effects */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
     }
     .admin-role{
         display: flex;
         width: 50%;
-        background-color: cornflowerblue;
+        /* background-color: cornflowerblue; */
         justify-content: space-between;
         padding-left: 20px;
         align-items: center;
@@ -104,14 +148,14 @@
     }
     .email-div{
         display: flex;
-        background-color: darksalmon;
+        /* background-color: darksalmon; */
         width: 1000px;
         height: 80px;
     }
     .email-name{
         display: flex;
         width: 50%;
-        background-color: rgb(34, 110, 38);
+        /* background-color: rgb(34, 110, 38); */
         justify-content: space-between;
         align-items: center;
     }
@@ -121,7 +165,7 @@
     .website{
         display: flex;
         width: 50%;
-        background-color: rgb(221, 100, 237);
+        /* background-color: rgb(221, 100, 237); */
         justify-content: space-between;
         padding-left: 20px;
         align-items: center; 
@@ -132,7 +176,7 @@
 
     .based-div {
         display: flex;
-        background-color: darksalmon;
+        /* background-color: darksalmon; */
         width: 1000px;
         height: 80px;
     }
@@ -140,7 +184,7 @@
     .manufactoring{
         display: flex;
         width: 50%;
-        background-color: rgb(47, 122, 141);
+        /* background-color: rgb(47, 122, 141); */
         
         align-items: center;
     }
@@ -186,7 +230,7 @@
 .service{
     display: flex;
     width: 50%;
-    background-color: rgb(98, 86, 165);
+    /* background-color: rgb(98, 86, 165); */
         
     align-items: center;
 }
@@ -196,7 +240,7 @@
 
 .about{
     display: flex;
-    background-color: rgb(100, 154, 199);
+    /* background-color: rgb(100, 154, 199); */
     width: 1000px;
     min-height: 80px;
     height: auto;
@@ -210,8 +254,23 @@
 .about-p-div p{
     font-size: 20px;
 }
+
+.admin-input-sel{
+    border-radius: 10px;
+    border: 1px solid #141B5F;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f0f4f8;  /* Light background color */
+    transition: all 0.3s ease;   /* Smooth transition for effects */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+
+}
+.admin-input-sel:active{
+    border: 3px solid #005bb5;  /* Darker blue border when typing */
+    box-shadow: 0 2px 8px rgba(0, 91, 181, 0.3); 
+}
 .textarea-div textarea{
-    background: transparent;
     width: 99%;
     margin: 5px;
     padding: 5px;
@@ -220,11 +279,14 @@
     border-radius: 10px;
     height: 300px;
     margin-top: 50px;
+    background-color: #f0f4f8;  /* Light background color */
+    transition: all 0.3s ease;   /* Smooth transition for effects */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
     
 }
 .textarea-div{
  width: 80%;
- background-color: bisque;
+ /* background-color: bisque; */
  display: flex;
  flex-direction: column;
  align-items: end;
@@ -233,12 +295,14 @@
 .textarea-div p{
     margin-top: 10px;
     margin-right: 20px;
+    font-size: 14px;
+    color: #555;
 }
 
 
 .btn-div{
     display: flex;
-    background-color: darksalmon;
+    /* background-color: darksalmon; */
     width: 1000px;
     height: 80px;
     justify-content: end;
@@ -248,7 +312,7 @@
 .btn{
     background-color: #141B5F;
     border: none;
-    font-size: 14px;
+    font-size: 16px;
     color: aliceblue;
     padding: 6px 12px;
     border-radius: 5px;

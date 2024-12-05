@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="info.css">
+    <script defer src="info.js"></script>
 </head>
 <body>
     <header>
@@ -54,22 +55,22 @@
             </div>
             <div class="info-list">
                 <div class="company-div">
-                    <p >Company name</p>
+                    <p >Company name <span>*</span></p>
                     <input class="company-input" placeholder="Enter Company name" required/>
                 </div>
                 <div class="address-div">
-                    <p >Address</p>
+                    <p >Address <span>*</span></p>
                     <input class="company-input" placeholder="Enter Address" required/>
                 </div>
 
 
                 <div class="admin-div">
                     <div class="admin-name">
-                        <p >Admin Name</p>
+                        <p >Admin Name <span>*</span></p>
                         <input class="admin-input" placeholder="Enter Admin name" required/> 
                     </div>
                     <div class="admin-role">
-                        <p>Admin Role</p>
+                        <p>Admin Role <span>*</span></p>
                         <input class="admin-input" placeholder="Enter Admin role" required/>
                     </div>
 
@@ -77,11 +78,11 @@
 
                 <div class="email-div">
                     <div class="email-name">
-                        <p >Official e-mail</p>
+                        <p >Official e-mail <span>*</span></p>
                         <input class="admin-input" placeholder="Rasith134@gmail.com" required/> 
                     </div>
                     <div class="website">
-                        <p>Website</p>
+                        <p>Website <span>*</span></p>
                         <input class="admin-input"  required/>
                     </div>
                 </div>
@@ -89,7 +90,7 @@
 
                 <div class="email-div">
                     <div class="email-name">
-                        <p >No.of.employees</p>
+                        <p >No.of.employees <span>*</span></p>
                         <input class="admin-input" placeholder="12" type="number" required/> 
                     </div>
                 </div>
@@ -101,7 +102,7 @@
                             <input type="radio" class="check" name="check"/>
                         </div>
                         <div class="man-div">
-                            <p>Is service based</p>
+                            <p><span>*</span> Is service based</p>
                         </div>
                     </div>
                     <div class="service">
@@ -109,7 +110,7 @@
                             <input type="radio" class="check" name="check"/>
                         </div>
                         <div class="ser-div">
-                            <p>Is service based</p>
+                            <p><span>*</span> Is service based</p>
                         </div>
                     </div>
                 </div>
@@ -117,8 +118,8 @@
 
                 <div class="email-div">
                     <div class="email-name">
-                        <p >Industry type</p>
-                        <select class="admin-input">
+                        <p >Industry type <span>*</span></p>
+                        <select class="admin-input-sel">
 							<option>Full Stack Development</option>
 							<option>Java Programming</option>
 							<option>Python</option>
@@ -126,12 +127,12 @@
 						</select> 
                     </div>
                     <div class="website">
-                        <p>Website</p>
-                        <select class="admin-input">
+                        <p>Company Type <span>*</span></p>
+                        <select class="admin-input-sel">
 							<option>Full Stack Development</option>
-							<option>Java Programming</option>
-							<option>Python</option>
-							<option>Data Analyst</option>
+							<option >Java Programming</option>
+							<option >Python</option>
+							<option >Data Analyst</option>
 						</select>
                     </div>
 
@@ -139,17 +140,17 @@
                 </div>
                 <div class="about">
                     <div class="about-p-div">
-                        <p>About Company</p>
+                        <p>About Company <span>*</span></p>
                     </div>
                     <div class="textarea-div">
                         <textarea placeholder="short Description" id="book-description-input"></textarea>
-                        <p>1/50 chart</p>
+                        <p id="char-count">0/500 chart</p>
                     </div>
                         
                     
                 </div>
                 <div class="btn-div">
-                    <button class="btn">Create account</button>
+                    <button class="btn" >Create Account</button>
                 </div>
 
 
